@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Serif+Display&display=swap');
+
+/* HTML styles */
 body {
     background-image: url("../images/application-background.jpg");
     background-position-x: center;
@@ -13,22 +16,47 @@ body {
     position: relative;
 }
 
+footer{
+    position: absolute;
+    width: 100vw;
+    bottom: 5px;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+/* wrappers styles */
+
 .main--wrapper{
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Aclonica', sans-serif;
+    color: rgb(172, 115, 9);
 
-}
-
-footer{
-    position: absolute;
-    width: 100vw;
-    bottom: 5px;
-    text-align: center;
 }
 
 .main-introduction__welcome{
     text-align: center;
+}
+
+.main-introduction__category-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    min-width: 100px;
+    min-height: 30px;
+    background: linear-gradient(to left top, white, rgba(235, 187, 99, 0.5)) no-repeat 0px/cover;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px lightgrey;
+    color: rgb(150, 100, 7);
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+
+.main-title{
+    font-size: 30px;
 }
