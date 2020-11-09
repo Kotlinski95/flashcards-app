@@ -13,6 +13,7 @@
     <meta property="og:url" content="https://adriankotlinskiportfolio.pl" />
     <meta property="og:image" content="https://adriankotlinskiportfolio.pl/logo.jpg" />
     <meta property="og:description" content="flashcards application" />
+    <link rel="stylesheet" href="./css/wrapper-styles.css" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
@@ -24,6 +25,39 @@
     </noscript>
     <div class="main--wrapper">
         <div class="main-introduction-wrapper"></div>
+        <section class="main-introduction__welcome">
+            <p data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1200">Welcome!</p>
+            <hhroup>
+             <h1 data-aos="fade-up"
+             data-aos-easing="linear"
+             data-aos-duration="1200"
+             data-aos-delay= "800" >Flashcard application - easy learn Front-End programing</h1>
+                <h2 data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1200"
+                data-aos-delay= "1200"  >Please, choose your category</h2>
+            </hhroup>
+            
+        </section>
+        <div class="main-introduction__category">
+            <div id="category-HTML" class="main-introduction__category-item" 
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-delay= "1800">HTML</div>
+            <div id="category-CSS" class="main-introduction__category-item" 
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-delay= "2400">CSS</div>
+            <div id="category-JS" class="main-introduction__category-item" 
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-delay= "3000"> JavaScript</div>
+        </div>
         <div class="main-category-wrapper"></div>
         <div class="main-flashcards-wrapper"></div>
     </div>
@@ -31,6 +65,9 @@
     <script>
         AOS.init()
     </script>
+    <footer>
+        Application made by @Adrian Kotliński
+    </footer>
 </body>
 
 </html>
