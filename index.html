@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset='utf-8'>
@@ -13,10 +13,24 @@
     <meta property="og:url" content="https://adriankotlinskiportfolio.pl" />
     <meta property="og:image" content="https://adriankotlinskiportfolio.pl/logo.jpg" />
     <meta property="og:description" content="flashcards application" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
+    <noscript>
+        You need scripting enabled for full functionality of the website.
+        Here you will find <a href="https://www.enable-javascript.com/en/">
+            instructions that will allow you to enable scripts in your browser </a>.
+    </noscript>
+    <div class="main--wrapper">
+        <div class="main-introduction-wrapper"></div>
+        <div class="main-category-wrapper"></div>
+        <div class="main-flashcards-wrapper"></div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
 </body>
 
 </html>
