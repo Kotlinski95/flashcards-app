@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Serif+Display&display=swap");
+
+/* HTML styles */
+body {
+    height: 100vh;
+    background-image: url("../images/application-background.jpg");
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+}
+
+/* wrappers styles */
+
+.main--wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Aclonica", sans-serif;
+    color: rgb(172, 115, 9);
+}
+
+.main-introduction__welcome {
+    text-align: center;
+}
+
+.main-introduction__category {
+    min-height: 400px;
+}
+
+.main-introduction__category-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    min-width: 100px;
+    min-height: 30px;
+    background: linear-gradient(to left top, white, rgba(235, 187, 99, 0.5)) no-repeat 0px / cover;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px lightgrey;
+    color: rgb(150, 100, 7);
+    padding: 3px 5px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.main-title {
+    font-size: 30px;
+}
