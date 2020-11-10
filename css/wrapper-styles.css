@@ -2,7 +2,7 @@
 
 /* HTML styles */
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../images/application-background.jpg");
     background-position-x: center;
     background-position-y: top;
@@ -13,7 +13,8 @@ body {
     background-clip: initial;
     background-color: initial;
     margin: 0 auto;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     position: relative;
 }
 
@@ -28,21 +29,28 @@ footer {
 /* wrappers styles */
 
 .main--wrapper {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "Aclonica", sans-serif;
     color: rgb(172, 115, 9);
+    box-sizing: border-box;
 }
 
 .main-introduction__welcome {
     text-align: center;
+    box-sizing: border-box;
 }
 
 .main-introduction__category {
-    min-height: 400px;
+    min-height: 250px;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-introduction__category-item {
@@ -50,7 +58,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 25px;
-    min-width: 100px;
+    width: 120px;
     min-height: 30px;
     background: linear-gradient(to left top, white, rgba(235, 187, 99, 0.5)) no-repeat 0px / cover;
     border-radius: 7px;
@@ -63,4 +71,75 @@ footer {
 
 .main-title {
     font-size: 30px;
+}
+
+.main-return-wrapper{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+
+/* ------------ flashcard ------------- */
+
+.main-flashcards-wrapper {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-flashcard-item {
+    display: none;
+    margin: 20px;
+    width: 300px;
+    height: 150px;
+    
+
+}
+
+.main-flashcard-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.main-flashcard-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.main-flashcard__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px 3px white;
+}
+
+
+.main-flashcard__front{
+    background-color: rgba(235, 187, 99, 0.4);
+}
+.main-flashcard__back{
+    background-color: rgba(216, 202, 177, 0.4);
+    transform: rotateY(180deg);
+}
+
+.main-flashcard__front--content,
+.main-flashcard__back--content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
